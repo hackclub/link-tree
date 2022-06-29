@@ -1,0 +1,132 @@
+/* color palette from https://www.color-hex.com/color-palettes */
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2')
+      format('woff2');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Phantom Sans';
+  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff')
+      format('woff'),
+    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2')
+      format('woff2');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --darkest-color: #064273;
+  --lightest-color: #def3f6;
+  --highlight-color: #ffffff;
+  --bright-color-1: #1da2d8;
+  --bright-color-2: #76b6c4;
+  --bright-color-3: #7fcdff;
+  --bright-color-4: #6093d2;
+}
+
+body {
+  background: var(--darkest-color);
+  color: var(--lightest-color);
+  font-family: 'Phantom Sans';
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.circle-shape {
+  width: 140px;
+  height: 140px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 3px solid var(--lightest-color);
+  margin: 0 auto;
+}
+
+.profile-pic {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+}
+
+a {
+  color: var(--lightest-color);
+  text-decoration: none;
+}
+
+.ig-link {
+  margin: 10px 0;
+  font-weight: bold;
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+.link-list-item {
+  border: 1px solid var(--lightest-color);
+  box-sizing: border-box;
+  margin: 20px auto;
+  color: var(--darkest-color);
+  padding: 15px;
+  text-align: center;
+  transition: all 0.15s;
+  border-radius: 2px;
+}
+
+.link-list-item-img {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.highlighted,
+.link-list-item:hover,
+a:hover {
+  color: var(--highlight-color);
+  border-color: var(--highlight-color);
+  text-shadow: 0 0 2em var(--highlight-color);
+}
+
+.icon-list-img {
+  height: 50px;
+  width: 50px;
+  margin: 3px;
+}
+
+.dark {
+  background: var(--bright-color-1);
+}
+
+.medium {
+  background: var(--bright-color-2);
+}
+
+.light {
+  background: var(--bright-color-3);
+}
+
+.bright {
+  background: var(--bright-color-4);
+}
