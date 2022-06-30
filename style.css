@@ -130,3 +130,10 @@ a:hover {
 .bright {
   background: var(--bright-color-4);
 }
+
+.logos{
+  position: absolute; 
+  bottom: 0; 
+  left: 25%;
+  right: 25%; 
+}
