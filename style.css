@@ -39,6 +39,8 @@
 }
 
 .link-list-item {
+  width: 20rem;
+  padding: 10px;
   box-sizing: border-box;
   margin: 0;
   min-width: 0;
