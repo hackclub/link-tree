@@ -160,6 +160,10 @@ a {
   margin-top: 15px;
 }
 
+.link-list {
+  display: grid;
+}
+
 /* .link-list-item {
   border: 1px solid var(--lightest-color);
   box-sizing: border-box;
