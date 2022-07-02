@@ -1,31 +1,39 @@
+/* =============== Fonts =============== */
 /* color palette from https://www.color-hex.com/color-palettes */
 @font-face {
-  font-family: 'Phantom Sans';
-  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff') format('woff'),
-    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2') format('woff2');
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff")
+      format("woff"),
+    url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Regular.woff2")
+      format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Phantom Sans';
-  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff') format('woff'),
-    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2') format('woff2');
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff")
+      format("woff"),
+    url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Italic.woff2")
+      format("woff2");
   font-weight: normal;
   font-style: italic;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Phantom Sans';
-  src: url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff') format('woff'),
-    url('https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2') format('woff2');
+  font-family: "Phantom Sans";
+  src: url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff")
+      format("woff"),
+    url("https://assets.hackclub.com/fonts/Phantom_Sans_0.7/Bold.woff2")
+      format("woff2");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
 }
 
+/* =============== Variables =============== */
 :root {
   --darkest-color: #064273;
   --lightest-color: #def3f6;
@@ -38,73 +46,63 @@
   --theme-ui-colors-sheet: #f9fafc;
 }
 
-.link-list-item {
-  width: 20rem;
-  padding: 10px;
+/* Base */
+* {
   box-sizing: border-box;
   margin: 0;
-  min-width: 0;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  display: inline-block;
-  text-align: center;
-  line-height: inherit;
-  -webkit-text-decoration: none;
-  text-decoration: none;
-  font-size: inherit;
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  color: var(--highlight-color);
-  background-color: var(--theme-ui-colors-primary);
-  border: 0;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: inherit;
-  font-weight: 700;
-  border-radius: 99999px;
-  display: -webkit-inline-box;
-  display: -webkit-inline-flex;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-align-items: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgb(0 0 0 / 13%);
-  letter-spacing: 0.009em;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-transition: -webkit-transform .125s ease-in-out, box-shadow .125s ease-in-out;
-  transition: transform .125s ease-in-out, box-shadow .125s ease-in-out;
-  text-transform: uppercase;
-  background-color: transparent;
-  color: var(--theme-ui-colors-primary);
-  border: 2px solid currentColor;
-  margin-right: 16px;
-  margin-bottom: 16px;
-  font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-}
-
-.link-list-item:focus, .link-list-item:hover {
-  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 8px 12px rgb(0 0 0 / 13%);
-  -webkit-transform: scale(1.0625);
-  -moz-transform: scale(1.0625);
-  -ms-transform: scale(1.0625);
-  transform: scale(1.0625);
+  padding: 0;
+  transition: 0.4s all ease-in-out;
 }
 
 body {
   background: var(--highlight-color);
   color: var(--lightest-color);
-  font-family: 'Phantom Sans';
+  font-family: "Phantom Sans";
   margin: 0;
+}
+
+/* =============== Components =============== */
+.buttons {
+  height: 55px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--highlight-color);
+  background-color: var(--theme-ui-colors-primary);
+  border-radius: 99999px;
+  border: none;
+  font-size: 24px;
+  padding: 0 32px;
+  font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
+  cursor: pointer;
+}
+.red-gradient {
+  background-image: radial-gradient(
+    ellipse farthest-corner at top left,
+    #ff8c37,
+    #ec3750
+  );
+}
+.blue-gradient {
+  background-image: radial-gradient(
+    ellipse farthest-corner at top left,
+    #33d6a6,
+    #338eda
+  );
+}
+.buttons:hover {
+  transform: scale(1.1);
+  color: var(--theme-ui-colors-sheet);
+}
+
+.link-list-item:focus,
+.link-list-item:hover {
+  box-shadow: 0 1px 2px rgb(0 0 0 / 6%), 0 8px 12px rgb(0 0 0 / 13%);
+  -webkit-transform: scale(1.0625);
+  -moz-transform: scale(1.0625);
+  -ms-transform: scale(1.0625);
+  transform: scale(1.0625);
 }
 
 #header {
@@ -123,6 +121,7 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
 }
 
 .circle-shape {
@@ -141,6 +140,9 @@ body {
   height: 100%;
   width: auto;
 }
+.profile-pic:hover {
+  transform: scale(1.1);
+}
 
 a {
   color: var(--lightest-color);
@@ -148,7 +150,8 @@ a {
 }
 
 .ig-link {
-  font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-family: "Phantom Sans", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, sans-serif;
   font-weight: bold;
   font-size: 40px;
   box-sizing: border-box;
@@ -158,10 +161,16 @@ a {
   line-height: 1;
   color: var(--theme-ui-colors-primary);
   margin-top: 15px;
+  width: max-content;
+}
+.ig-link:hover {
+  color: #bd4252;
 }
 
 .link-list {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 /* .link-list-item {
@@ -174,8 +183,6 @@ a {
   transition: all 0.15s;
   border-radius: 2px;
 } */
-
-
 
 .link-list-item-img {
   width: 100%;
