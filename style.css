@@ -204,6 +204,9 @@ a:hover {
   margin: 3px;
 }
 
+.logos{
+  text-align: center;
+}
 .dark {
   background: var(--bright-color-1);
 }
