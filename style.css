@@ -87,8 +87,15 @@ body {
 .blue-gradient {
   background-image: radial-gradient(
     ellipse farthest-corner at top left,
-    #33d6a6,
+    #5bc0de,
     #338eda
+  );
+}
+.green-gradient {
+  background-image: radial-gradient(
+    ellipse farthest-corner at top left,
+    #5bc0de,
+    #33d6a6
   );
 }
 .buttons:hover {
@@ -139,9 +146,6 @@ body {
   margin: 0 auto;
   height: 100%;
   width: auto;
-}
-.profile-pic:hover {
-  transform: scale(1.1);
 }
 
 a {
