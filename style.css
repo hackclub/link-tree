@@ -98,6 +98,20 @@ body {
     #33d6a6
   );
 }
+.orange-gradient {
+  background-image: radial-gradient(
+    ellipse farthest-corner at top left,
+    #ff8c37,
+    #f1c40f
+  );
+}
+.purple-gradient {
+  background-image: radial-gradient(
+    ellipse farthest-corner at top left,
+    #a633d6,
+    #338eda
+  );
+}
 .buttons:hover {
   transform: scale(1.1);
   color: var(--theme-ui-colors-sheet);
