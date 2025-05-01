@@ -5,16 +5,15 @@
 
 [**Hack Club**](https://hackclub.com/) is a global, nonprofit network of high school makers & student-led coding clubs. This repository is where we store our [Workshops](https://workshops.hackclub.com), which are self-led learn-to-code tutorials, as well as our [Code of Conduct](https://hackclub.com/conduct/).
 
- We’re an entirely open source organization—[our website](https://github.com/hackclub/site) to even [our finances](https://bank.hackclub.com/hq) are public. It’s backed by everyone from [Elon Musk](https://hackclub.com/elon/) to the co-founder of GitHub, [Tom Preston-Werner](https://hackclub.com/preston-werner/).
-
+We’re an entirely open source organization—[our website](https://github.com/hackclub/site) to even [our finances](https://bank.hackclub.com/hq) are public. It’s backed by everyone from [Elon Musk](https://hackclub.com/elon/) to the co-founder of GitHub, [Tom Preston-Werner](https://hackclub.com/preston-werner/).
 
 ## Contributing to [Hack Club](https://hackclub.com/)
 
-Contributions are welcome! Feel free to submit a pull request with code changes, or open issues for suggestions or bug reports. In order to properly contribute first check out our [Contribution Guidelines](https://github.com/hackclub/hackclub/blob/main/CONTRIBUTING.md) which contains a set of guidelines which any contributions to any Hack Club repository must follow. 
+Contributions are welcome! Feel free to submit a pull request with code changes, or open issues for suggestions or bug reports. In order to properly contribute first check out our [Contribution Guidelines](https://github.com/hackclub/hackclub/blob/main/CONTRIBUTING.md) which contains a set of guidelines which any contributions to any Hack Club repository must follow.
 
-To make things easier on how to select a project to work on, we have made an [open source](https://github.com/hackclub/contribute) [website](https://contribute.hackclub.com/) that helps with the process!  
+To make things easier on how to select a project to work on, we have made an [open source](https://github.com/hackclub/contribute) [website](https://contribute.hackclub.com/) that helps with the process!
 
-If you need any help, please feel free to contact us at team@hackclub.com or on our [Slack](https://hackclub.com/slack).
+If you need any help, please feel free to contact us at [team@hackclub.com](mailto:team@hackclub.com) or on our [Slack](https://hackclub.com/slack).
 
 1. Check out our [public issues board][0]. If your issue isn't on the board, [open a new one][1].
 2. Pick an issue that nobody has claimed and start working on it. First-time contributors should look for the "[first-timers-only][2]" label on issues.
