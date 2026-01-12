@@ -1,3 +1,5 @@
+<< this has been deprecated in favor of hackclub/links >>
+
 # <img src="https://assets.hackclub.com/icon-rounded.svg" width="15%" alt="HackClub logo">
 # Hack Club's Instagram Link Tree
 
